@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data
+data/
+*.parquet
+*.csv
+*.json
+
+# Databricks
+.databricks/
+
+# OS
+.DS_Store
+Thumbs.db
