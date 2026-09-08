@@ -1,0 +1,19 @@
+bundle:
+  name: ride-sharing-dataplatform
+
+include:
+  - resources/*.yml
+
+variables:
+  s3_bucket:
+    description: S3 bucket containing simulator event files
+    default: ride-sharing-dataplatform-aritra-2026
+
+  notification_email:
+    description: Email address for Lakeflow Job failure notifications
+    default: your-email@example.com
+
+targets:
+  dev:
+    default: true
+    mode: development

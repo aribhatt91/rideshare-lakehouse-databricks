@@ -1,0 +1,18 @@
+resources:
+  pipelines:
+
+    bronze_pipeline:
+
+      name: ride-sharing-bronze
+
+      serverless: true
+
+      catalog: workspace
+      schema: bronze
+
+      configuration:
+        ride_sharing.s3_bucket: ${var.s3_bucket}
+
+      libraries:
+        - glob:
+            include: ../src/pipelines/**
